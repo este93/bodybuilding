@@ -1,0 +1,445 @@
+body{
+  background-color: rgb(40,43,48);
+}
+#home{
+  top: 15px;
+  left: 15px;
+  position: fixed;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+#pocetna{
+  top: 15px;
+  left: 15px;
+  width: 100px;
+  height: 100px;
+  background: darkSlateGray;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -21;
+  color: white;
+  text-align: center;
+  line-height: 64px;
+  cursor: pointer;
+  position: fixed;
+}
+.fa-3x{
+  font-size: 3em;
+    top: 41px;
+  left: 28px;
+  position: absolute;
+}
+.image-container {
+  position:relative;
+  width:438px;
+  height: 770px;
+ margin:0 auto;
+}
+.whole-body img {
+}
+.preloader {
+  background-image: url("../misc/loading.gif");
+  width:100%;
+  height: 100%;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-color:white;
+  position:absolute;
+  z-index:999;
+}
+.arrow-left, .arrow-right {
+  position:absolute;
+  height:100%;
+  width:60px;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:white;
+ cursor:pointer;
+}
+.arrow-left {
+  background-image: url("../misc/arrow-right.jpg");
+  left:-70px;
+  background-color: rgb(40,43,48);
+}
+.arrow-right {
+  background-image: url("../misc/arrow-left.jpg");
+  right:-70px;
+  background-color: rgb(40,43,48);
+}
+.front, .back {
+  width:100%;
+  position: absolute;
+  top:0;
+  height:200px;
+  display:block;
+}
+.back {
+  display:none;
+}
+.front > div, .back > div {
+  position:relative;
+  float:left;
+  
+}
+.front > div:hover .tooltip, .back > div:hover .tooltip {
+  opacity:1;
+  z-index:300;
+}
+.tooltip {
+  pointer-events: none;
+  padding: 10px;
+  background: rgb(180, 180, 180);
+  color: white;
+  display: block;
+  position: absolute;
+  left: -100px;
+  opacity: 0;
+  border-radius:10px;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  cursor:pointer;
+  top: -80px;
+    min-width: 116px;
+  text-align: center;
+  border:1px solid white;
+  
+}
+.line {
+  border-right:1px solid transparent;
+  content: "■";
+  text-align:right;
+  line-height:1px;
+  color:black;
+  width: 67px;
+  height: 1px;
+  background: #eee;
+  float: left;
+  position: absolute;
+  -webkit-transform: rotate(69deg);
+  -moz-transform: rotate(69deg);
+  -o-transform: rotate(69deg);
+  transform: rotate(69deg);
+  top: 86px;
+  left: 86px;
+}
+.line:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: relative;
+  display: block;
+  background: black;
+  float: right;
+  top: -2px;
+  left: 2px;
+}
+.highlighted-parts {
+  cursor:pointer;
+}
+.front img, .back img {
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition:all 500ms ;
+  -o-transition:all 500ms ;
+  transition: all 500ms;
+  cursor:pointer;
+}
+.front > div:hover img, .back > div:hover img {
+  cursor:pointer;
+  -webkit-filter: brightness(170%);
+  -moz-filter: brightness(170%);filter: brightness(2);
+  pointer-events:none;
+}
+
+#grudi {
+  top: 129px;
+  left: 138px;
+}
+#grudi .tooltip{
+    top: -80px;
+  left: -20px;
+}
+#grudi .line{
+    top: 88px;
+  left: 50px;
+}
+.rame_desno {
+  top: 126px;
+  left: 100px;
+}
+.rame_levo {
+  top: 127px;
+  left: -141px;
+}
+.rame_levo .tooltip {
+   left: -66px;
+  top: -66px;
+}
+.rame_levo .line {
+  -webkit-transform: rotate(48deg);
+  -moz-transform: rotate(48deg) ;
+  -ms-transform: rotate(48deg) ;
+  -o-transform: rotate(48deg) ;
+  transform: rotate(48deg);
+  width: 53px;
+  top: 75px;
+  left: 50px;
+}
+.rame_desno .tooltip {
+    left: 50px;
+  top: -70px;
+}
+.rame_desno .line {
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg) ;
+  -ms-transform: rotate(35deg) ;
+  -o-transform: rotate(35deg) ;
+  transform: rotate(125deg) ;
+    width: 55px;
+  top: 78px;
+  left: -15px;
+}
+.trapez_levi {
+  top: 105px;
+  left: -168px;
+}
+.trapez_desni {
+  top: 100px;
+  left: -116px;
+}
+.trapez_desni .tooltip {
+    left: -18px;
+  top: -78px;
+}
+.trapez_desni .line {
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg) ;
+  -ms-transform: rotate(35deg) ;
+  -o-transform: rotate(35deg) ;
+  transform: rotate(125deg) ;
+    width: 55px;
+  top: 79px;
+  left: 22px;
+}
+.trapez_levi .tooltip{
+     left: -60px;
+  top: -95px;
+}
+.trapez_levi .line{
+     left: 45px;
+  top: 84px;
+  width: 60px;
+}
+#abdomen {
+   left: -88px;
+  top: 132px;
+}
+#abdomen .line{
+    top: 85px;
+  width: 58px;
+  left: 40px;
+}
+#abdomen .tooltip{
+  top: -47px;
+    left: -15px;
+}
+.biceps_desni {
+  left: -75px;
+  top: 31px;
+}
+.biceps_levi {
+  left: -275px;
+  top: 118px;
+}
+.biceps_levi .tooltip{
+   left: -60px;
+  top: -85px;
+}
+.biceps_levi .line{
+     top: 90px;
+  left: 40px;
+}
+.biceps_desni .tooltip{
+  left: -15px;
+  top: -80px;
+}
+.biceps_desni .line{
+    left: 23px;
+  width: 60px;
+  top: 90px;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg) ;
+  -ms-transform: rotate(35deg) ;
+  -o-transform: rotate(35deg) ;
+  transform: rotate(108deg);
+}
+.triceps_levi {
+  left: 67px;
+  top: -61px;
+}
+.triceps_desni {
+  left: 269px;
+  top: -66px;
+}
+.triceps_desni .tooltip{
+    top: -80px;
+  left: -11px;
+}
+.triceps_desni .line{
+  top: 85px;
+  left: 20px;
+  width: 60px;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg) ;
+  -ms-transform: rotate(35deg) ;
+  -o-transform: rotate(35deg) ;
+  transform: rotate(108deg);
+}
+.triceps_levi .line{
+    top: 87px;
+  left: 40px;
+}
+.triceps_levi .tooltip{
+    top: -90px;
+  left: -65px;
+}
+.kvadriceps_levi {
+   left: 18px;
+  top: 83px;
+}
+.kvadriceps_desni {
+   left: 38px;
+  top: 79px;
+}
+
+.kvadriceps_levi .tooltip{
+    left: -42px;
+  top: -13px;
+}
+.kvadriceps_levi .line{
+    left: 38px;
+  top: 88px;
+}
+.kvadriceps_desni .tooltip{
+  left: 14px;
+  top: -8px;
+}
+.kvadriceps_desni .line{
+    left: 20px;
+  top: 88px;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg) ;
+  -ms-transform: rotate(35deg) ;
+  -o-transform: rotate(35deg) ;
+  transform: rotate(108deg); 
+}
+
+#donja_ledja {
+  top: 217px;
+  left: 155px;
+  height: 72px;
+  margin-top: 30px;
+}
+#donja_ledja img {
+  pointer-events:none;
+  top:-30px;
+  position:relative;
+}
+#lepeza_desna {
+  top: 133px;
+  left: 99px;
+  height: 120px;
+  z-index:2;
+}
+#lepeza_desna .tooltip{
+  left: -76px;
+  top: -52px;
+}
+#trapezius {
+  top: -53px;
+  left: 173px;
+  width: 100px;
+  margin-right: 20px;
+  height: 146px;
+  z-index:0;
+}
+#trapezius img {
+  left: -29px;
+  position: relative;
+  pointer-events:none;
+}
+#lepeza_leva {
+  top: 135px;
+  left: -114px;
+  height: 120px;
+  z-index:2;
+}
+
+
+
+
+
+
+#vezba h4{
+     line-height: 24px;
+  background: #f0f0f0 url(../misc/sectionBarBg.png) top left repeat-x; 
+  font-size: 14px;
+    padding-left: 10px;
+      margin: 20px 0;
+}
+#vezba_txt{
+  color: rgb(236, 236, 236);
+    width: 659px;
+  float: left;
+  margin-left: 30px;
+}
+#vezba_txt p {
+  margin: 7px 0;
+}
+#vezba a {
+  color: #ad0101;
+}
+#vezba{
+  overflow: hidden;
+  margin: 15px 20px;
+}
+#vezba img{
+    display: block;
+  width: 390px;
+  height: 250px;
+  float: left;
+  margin: 0 auto;
+}
+.popup {
+  width:90%;
+  height:90%;
+  position:fixed;
+  left:4.5%;
+  top:4.5%;
+  z-index :-9;
+  opacity:0;
+  background: #5F5F5F;
+  overflow-y: scroll;
+}
+.close {
+  position:absolute;
+  top:5px;
+  right:5px;
+  width: 20px;
+  height: 20px;  
+  background: url('../misc/Xmark.png');
+  background-size: 25px 25px;
+  cursor:pointer;
+}

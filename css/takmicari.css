@@ -1,0 +1,168 @@
+#t_side {
+	width: 280px;
+	overflow: hidden;
+}
+#t_side_img {
+	height: 250px;
+	width: 280px; 
+}
+#t_side_img img {
+	width: 280px;
+	height: 250px;
+}
+#t_main {
+	width: 666px;
+	padding: 20px 25px 10px 25px;
+	line-height: 25px;
+	overflow: hidden;
+	color: black;
+	font-size: 17px;
+	background-color: white;
+}
+#b_side {
+	width: 260px; 
+	height: 400px;
+	background-color: white;
+	padding: 10px; 
+	text-align: center;
+}
+#b_side dt {
+	color: #343434; 
+	font:normal 700 medium futura-pt,sans-serif; 
+	font-size: 14px;
+  text-transform: uppercase;
+}
+#b_side dd {
+	position: relative; 
+	-webkit-margin-start: 0px;
+	color: #ad0101;
+  margin-bottom: 9px;
+  font-size: 19px;
+}
+.siva {
+	color: #b4b4b4;
+}
+
+
+
+
+
+.klasa7{
+	clear:both;
+}
+.parno:nth-child(odd){
+	margin-top:0px !important;
+}
+.parno:nth-child(even){
+	margin-top:-25px;
+}
+.grid {
+	overflow: hidden; 
+	width: 1100px;
+}
+.asd {
+	margin-top: -20px; 
+}
+.grid a:nth-child(odd) {
+	margin: 30px 0 0 0;
+}
+.grid a {
+	float: left;
+	height: 320px;
+	width: 183px;
+	color: #333;
+	overflow: hidden;
+}
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #333; 
+}
+.grid figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+}
+
+.grid figcaption h2 {
+	color: #ad0101;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-weight: 600;
+	line-height: 14px;
+	font-size: 17px;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.grid figcaption p {
+	padding: 0 0;
+	color: #343434;
+	font-size: 14px;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption h2,
+.grid figcaption p {
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.grid figure button {
+	position: absolute;
+	padding: 4px 20px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p,
+.grid figure button {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.grid svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 1;
+	width: 100%;
+}
+
+.grid svg path {
+	fill: #fff;
+}
+
+/* Hover effects */
+.grid a:hover figure img {
+	opacity: 1;
+}
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.grid a:hover figcaption p {
+	opacity: 0;
+}
